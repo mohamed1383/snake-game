@@ -72,9 +72,7 @@ export default function Home() {
 
       for(let i = 1 ; i < newSnake.length ; i++){
         if(newSnake[0].x == newSnake[i].x && newSnake[0].y == newSnake[i].y){
-          console.log('game over')
-          clearInterval(intervalId)
-          router.push('/lose')
+          router.replace('/lose')
         }
       }
 
